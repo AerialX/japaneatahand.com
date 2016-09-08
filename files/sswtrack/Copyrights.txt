@@ -1,0 +1,41 @@
+Supersonic Wii: Winter Edition Soundtrack
+
+This folder contains all of the music from the game. Each file is the full song with all parts of each.
+All of the music was created by different contributors, and is the copyright of each creator. The name of each 
+artist is contained in the ID3 tags of each file, as well as in the list below. The track layouts were also 
+created by individual contributors, which are also in the list below.
+
+These files were converted for your use with permission from AerialX, the game's overall creator, but if you are
+an artist of one of the songs and you do not want your song included here, feel free to send me an email at the
+address below and I'll remove it.
+
+Have fun!
+
+icefall5
+climberboi75 [at] hotmail.com
+
+
+
+
+COPYRIGHTS- first name listed is the music creator, second name is the track layout creator
+
+
+World- Origin
+
+Space Vacation- little elk, s stolk
+Super Mario Bros. Remix- c hampton, s stolk
+Synthetic Nightmare- tssf, s stolk
+Turrican Remix- c hulsbeck, s stolk
+
+
+World- Secundus
+
+OMG Tetris- xaser, devilspawn
+Voxelbuffer- xaser, aaron l
+
+
+World- Winter Wonderland
+
+Canon in D Remix- bahamut, aaron l
+Ode to Megaman- moonboyMoonboy, aaron l
+Winter Symphony- decade, aaron l

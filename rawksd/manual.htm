@@ -1,0 +1,293 @@
+<html>
+	<head>
+		<title>
+			RawkSD - Rock Band 2 Wii Custom SD DLC
+		</title>
+	</head>
+	<body>
+		<style>
+/*			p {
+				font-size: 130%;
+			}
+*/
+		</style>
+		<p>
+			<strong>RawkSD is brought to you by...</strong>
+			<ul>
+				<li>Aaron "AerialX" - <em>coder</em></li>
+				<li>tueidj - <em>coder</em></li>
+				<li>Mrkinator - <em>artist</em></li>
+				<li>SFenton - <em>...</em></li>
+			</ul>
+		</p>
+		<hr />
+		<h1>RawkSD Usage Manual</h1>
+		<ol style="font-size: 200%;">
+			<li><a href="#forward">Forword</a></li>
+			<li><a href="#install">Installation</a></li>
+			<li>
+				<a href="#usage">Usage</a>
+				<ol>
+					<li><a href="#create">Creating Customs</a></li>
+					<li><a href="#edit">Editing Customs</a></li>
+					<li><a href="#custominstall">Custom Installation</a></li>
+					<li>
+						<a href="#import">Importing</a>
+					</li>
+				</ol>
+			</li>
+			<li><a href="#faq">Frequently Asked Questions</a></li>
+		</ol>
+		<hr />
+		<a id="forward"></a>
+		<h2>Forword</h2>
+		<p>
+			This project began late 2008, as soon as Rock Band 2 first launched in North America.
+			Before the Music Store was available, Mrkinator was eager to try replacing various disc files, and had little success.
+			<br />
+			DLC modifications became a reality in early February, when tueidj released basic DLC tools to a select few people.
+			Progress was stalled due to Harmonix' new audio encryption system, until May, when Aaron joined the team and discovered
+				that the game could be forced to accept an alternative audio format.
+			<br />
+			Work on RawkSD was soon underway, and now, a month and a half later, we are proud to present RawkSD to the world!
+		</p>
+		<hr />
+		<a id="install"></a>
+		<h2>Installation</h2>
+		<p>
+			<strong>PC Installation</strong><br />
+			RawkSD is distributed in a WinZip archive. This may be extracted to any location, and can be started by simply running <em>RawkSD.exe</em>.
+			<br />
+			RawkSD requires the Microsoft .NET Framework 3.0 to be installed on your computer. If you are unable to run <em>RawkSD.exe</em>, you must install the .NET framework, which can be downloaded <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=10CC340B-F857-4A14-83F5-25634C3BF043&displaylang=en">here</a>.
+			<br />
+			It can also be run on other platforms such as Mac OS X and Linux. You must install the <strong>Mono</strong> runtime. It can be downloaded from <a href="http://www.go-mono.com/mono-downloads/download.html">here</a>, or can often be installed from your distribution's package manager.
+			<br /><br />
+			<strong>Wii Installation</strong><br />
+			The RawkSD.zip archive also includes an "apps" folder within it.
+			This must be copied to the root of an SD card in order to be launched from the Wii's <a href="http://hbc.hackmii.com">Homebrew Channel</a>.<br />
+			There are two Wii programs included with RawkSD. <em>RawkSD Patcher</em> needs to be run only once, and then it may be deleted from your SD card.
+			It prepares your Wii for Rock Band 2 customs via RawkSD. This installer may not be required if you already have a patched IOS37 installed on your Wii,
+			which could be the case if something like cIOScorp or SoftMii is installed.
+		</p>
+		<hr />
+		<a id="usage"></a>
+		<h2>Usage</h2>
+		<p>
+			When you start RawkSD, you will be thrown into the main screen.
+			If this is your first time running it, you won't have any customs available to you yet.
+			Your first goal is to get some songs packaged together so that you can put them on your SD card and start rawking!
+		</p>
+		<img src="images/usage1.png" />
+		<p>
+			To start, you have to get a custom song from somewhere. You may <a href="#import">import songs from one of the many discs that RawkSD supports</a>,
+			or you can scour <a href="http://scorehero.com">ScoreHero</a> for the custom song you're looking for (you're usually expected to provide the MP3 audio on your own).
+			The <a href="http://rockband.scorehero.com">Rock Band side of ScoreHero</a> has a <a href="http://rockband.scorehero.com/forum/viewtopic.php?t=9342">master thread</a> for
+			a number of full-band customs.
+			<br /><br />
+			If you get a Guitar Hero custom and find it in the .chart format, you'll have to use <a href="http://www.scorehero.com/forum/viewtopic.php?t=45092">Leff's chart2mid2chart</a> program to convert it to a MIDI chart.
+			If you do this, don't forget to check the "Convert GH Star Power to Overdrive" option that you'll encounter when you create the custom; otherwise you'll end up with a large number of solo sections and no overdrive!
+		</p>
+		<a id="create"></a>
+		<h3>Creating Customs</h3>
+		<p>
+			At this point in the guide, I assume that you have a .mid note chart custom, and an audio file for the song (such as an MP3).<br />
+			On the main RawkSD window, select the <em>New Custom</em> toolbar button, or use the <em>Customs -&gt; Create...</em> menu. You will be shown a window where you can select those files.
+			<br /><br />
+			<strong>NOTE</strong>: You are able to revisit the file selection dialog at any time on a custom with the <em>Replace Custom Files</em> button, or <em>Customs -&gt; Replace Files</em> menu.
+		</p>
+		<img src="images/usage2.png" />
+		<p>
+			The file selection dialog is comprised of the following options:
+			<ul>
+				<li>
+					<strong>Audio</strong><br />
+					Use the "..." button to select an audio file, of virtually any format. If your music doesn't appear under "Supported Audio Formats" give it a shot with "All Files" anyway.
+				</li>
+				<li>
+					<strong>Preview</strong><br />
+					Select the times from your music for RawkSD to generate the preview clip from.
+				</li>
+				<li>
+					<strong>Chart</strong><br />
+					Use the "..." button to select a MIDI note chart. This can be a Rock Band custom, a Frets on Fire chart, or Guitar Hero custom.
+				</li>
+				<li>
+					<strong>Convert GH Star Power to Overdrive</strong><br />
+					If your note chart is in the Guitar Hero format (or converted with chart2mid2chart), it likely has solo sections where Overdrive should be.
+					Use this option to make Rock Band 2 compatible with Guitar Hero star power. If your chart was specifically made for Rock Band (for example, a full band custom), you should not have this checked.<br />
+					If you're playing and you find that your custom has a lot of little solo sections in it, go back and replace the chart with this option checked.
+				</li>
+				<li>
+					<strong>Add Empty Drum Track</strong><br />
+					If you're creating a custom that has the drums instrument charted, select this option, otherwise the game will crash when you try to play a custom on drums.
+					The only time you have a full band custom and don't want to check this is if you have access to the master tracks of the song, which is a fairly rare case.
+				</li>
+				<li>
+					<strong>Fix Chart for Quickplay</strong><br />
+					This option makes a note chart compatible with Rock Band 2, making it work better in Practice mode, and run without crashing in Quickplay (and therefore the custom will be online-capable).
+					It will also add some basic random camera and light animations to make the chart feel more dynamic.<br />
+					You will only want this option unchecked if the chart you're importing was specifically designed with animations for Rock Band on the Wii, XBox 360, or Playstation 3 systems.
+				</li>
+				<li>
+					<strong>Silence</strong><br />
+					The Audio Delay specifies how many seconds of silence should be added to the music.
+					When you download a custom chart, the creator usually specifies the "offset" of the chart, typically in milliseconds. This is the Audio Delay that you want to add.
+					<br />
+					You also have the option of adding silence to the note chart.
+					You may have played a custom and felt that the notes are coming too soon, before the audio.
+					In this case, you can replace the chart and specify a Chart Delay in order to get the chart syncronized properly.
+				</li>
+			</ul>
+			Once you press <em>OK</em>, RawkSD will start to work. Encoding the audio can take a few minutes, so you'll probably have to wait.
+			Once it's done, you will be directed to the customs editor in order to fill in information about the custom.
+			This window will be detailed in the next part of the guide; you can always come back to the editor later.
+		</p>
+		<a id="edit"></a>
+		<h3>Editing Customs</h3>
+		<p>
+			You are able to edit a custom at any time with the <em>Edit Custom</em> toolbar button, or <em>Customs -&gt; Edit...</em> menu.
+		</p>
+		<img src="images/usage3.png" />
+		<p>
+			When editing customs, you are presented with a large number of options.
+			The most common ones that you'll be editing are those under the <strong>Song Info</strong> header:
+			<ul>
+				<li>
+					<strong>Identifier</strong></br>
+					This is how the game identifies any song. It uses this name to put the song on the leaderboards,
+					and decide whether other people have the same DLC as you when playing online. It is essential that the identifier
+					is exactly the same between two people in order to play customs online with each other.<br />
+					Good practice for choosing an identifier is using the song name without spaces and in all lowercase.
+				</li>
+				<li>
+					<strong>Name, Artist, Album, Year, Genre</strong></br>
+					These fields are used to display information in the track list.
+				</li>
+				<li>
+					<strong>Track</strong></br>
+					This is the track number of the song in its album. It doesn't actually seem to be used by the game...
+				</li>
+				<li>
+					<strong>Vocalist</strong></br>
+					The default gender of the vocalist when there isn't a player on vocals.
+				</li>
+				<li>
+					<strong>Master Recording</strong></br>
+					Specifies whether the song is actually the master tracks by the Artist, or whether it's "made famous by."
+					If this is unchecked, the Album name does not show up in-game.
+				</li>
+			</ul>
+			The <strong>Advanced Info</strong> should rarely need to be modified. The <em>Animation Tempo</em> is often a power of 2, and
+			the default <em>HOPO Threshold</em> (which specifies how far apart notes should be for them to be considered hammerons or pulloffs)
+			is 170 when it is set to 0.
+		</p>
+		<p>
+			The <strong>Audio Tracks</strong> section allows you to select an audio channel and specify the volume and balance of the track. The
+			Core value can be ignored. For a track's Balance, a value of -1.0 completely pans it to the left, 0.0 is centered, and 1.0 is panned
+			to the right.
+		</p>
+		<p>
+			The instrument tabs are used to map audio channels to each instrument. The <strong>Difficulty Tier</strong> decides where in the setlist the
+			song appears. A setting of zero will prevent that instrument from being played on the song.
+			Unless you have the master tracks to a song, you won't want any instruments mapped to a track. <br />
+			<em>Note that there is one exception to this rule: drum customs *must* have a track assigned to them
+			in order to be played. The <em>Add Empty Drum Track</em> option in the File replace dialog automatically adds an extra track to the
+			audio and will map the drum track to it. Don't uncheck this.</em>
+		</p>
+		<p>
+			Once you're done editing a custom, pressing <em>OK</em> will save your changes and bring you back to the main window.
+		</p>
+		<a id="import"></a>
+		<h4>Importing</h4>
+		<p>
+			RawkSD supports the importing from various music-rhythm games. At the moment, it supports Rock Band 1 and Guitar Hero 3,
+			including their variants (Rock Band track packs, and Guitar Hero: Aerosmith). To do this, it requires that you have a disc
+			image on your computer. This can be gathered from a number of ways, but the quickest way is to use your Wii and Wii Homebrew
+			to dump the disc to a USB drive or SD card with tueidj's <a href="http://gbatemp.net/index.php?showtopic=163598">SuperDump</a>
+			(it can be as quick as 20 minutes).<br />
+			Note that the importers are only compatible with the Wii versions of the games.
+		</p>
+		<p>
+			Importing from a disc is easy once you have an ISO disc image on your computer. Select the appropriate game from the <em>Import</em>
+			menu, and choose the game dump (for Rock Band 1 imports, you may also select an ARK file instead). You will then be given the option
+			to choose which songs from the disc you wish to import. Press <strong>Import</strong> and wait for it to finish; Guitar Hero 3 discs
+			will take a considerably longer time than Rock Band 1 to fully import.
+		</p>
+		<a id="custominstall"></a>
+		<h3>Installing Customs</h3>
+		<p>
+			Installing customs onto your Wii is a two-step process. You must first follow the instructions about creating and editing customs
+			in order to have a custom ready to be installed. Then you need to place an SD card in your Wii, start up the Homebrew Channel,
+			and launch the <strong>RawkSD Installer</strong>.
+		</p>
+		<p>
+			When you select <strong>Install</strong> from the RawkSD installer, the installer will prepare you SD card for custom installation
+			(this won't delete anything on the card, including other custom or real DLC). It will then wait for you to install customs with
+			the PC installer before continuing. So take your SD card out of the Wii, insert it into your computer, and start up the RawkSD
+			PC application. Use the <em>File -&gt; Open SD Card</em> menu or button to select your SD card's drive. Then select
+			<em>Customs -&gt; Install</em>. In the window that appears, check off the customs that you want to install to the SD card and let
+			it go. Once it's done you can exit and remove the SD card. Re-insert it into the Wii and let RawkSD finish the installation.<br />
+			Now you're ready to play Rock Band 2 customs!
+		</p>
+		<hr />
+		<a id="faq"></a>
+		<h2>Frequently Asked Questions</h2>
+		<h3>How do I run this with Mono on Mac OS X / Linux?</h3>
+		<p>
+			RawkSD can be run on Mac OS X and Linux if you're willing to take the time to get all the components together.
+			You will need to get the following:
+			<ul>
+				<li>
+					<a href="http://www.go-mono.com/mono-downloads/download.html">Mono</a> - 
+					Mono is needed to run RawkSD. Once installed, RawkSD can be started from the commandline with the "mono RawkSD.exe" command.
+				</li>
+				<li>
+					<a href="http://ffmpeg.org/">FFmpeg</a> -
+					FFmpeg is required to convert your audio for RawkSD customs.
+				</li>
+			</ul>
+			Note that RawkSD also relies on some native libraries included with it that will only run on Windows, an Intel Mac OS X, and 32-bit Linux.
+		</p>
+		<h3>Help! I downloaded a song from the Music Store and all my customs disappeared!</h3>
+		<p>
+			This is unfortunately how the game is designed. You must start the RawkSD Wii installer, press Install, and then take your SD card to your computer.
+			Start up the PC installer and use the <em>Customs -&gt; Update SD Save</em> menu to update the SD contents. Insert the SD card back into the Wii and
+			continue the installation; your customs will appear again.
+		</p>
+		<h3>Why don't my customs show up in-game?</h3>
+		<p>
+			Have you run the RawkSD Wii installer from the Homebrew Channel? It has to be used every time you add a new custom to your SD card.
+		</p>
+		<h3>Why don't my customs show up in-game? Yes I ran the Wii installer!</h3>
+		<p>
+			Did you properly set the tier difficulties when editing/creating the custom on the PC? If a tier is set to <em>0.00</em> for an
+			instrument, you will not see the song in your list when playing as that instrument.
+		</p>
+		<h3>I get an error whenever I try to start the install process on the Wii!</h3>
+		<p>
+			Have you run the one-time RawkSD Patcher from the Homebrew Channel? It needs to be run in order for customs to be installed
+			on your Wii.
+		</p>
+		<h3>Why does Rock Band 2 say my customs are "Out of Date"?</h3>
+		<p>
+			If you're playing Rock Band 2 through a backup loader, the cIOS you are using is incompatible with Rock Band 2 DLC, and RawkSD.
+			Go yell at waninkoko.
+		</p>
+		<h3>Why does my custom freeze when I try playing it on drums?</h3>
+		<p>
+			Make sure that the <strong>Add Empty Drum Track</strong> checkbox is set when you are importing the audio (use the Replace Files
+			window again if you have to), and that the Drum tab has audio checked for the last audio channel. Otherwise the game will crash
+			when you play as drums.
+		</p>
+		<h3>Why are there so many short solo sections in my custom?</h3>
+		<p>
+			The custom you're playing was made for Guitar Hero, or was converted with chart2mid2chart. Go back into the Replace Files window,
+			and make sure you check <strong>Convert GH Star Power to Overdrive</strong> when you import the chart.
+		</p>
+		<h3>How do I get my Rock Band 1 / Track Pack / Guitar Hero 3 / Aerosmith disc on my PC so that I can import it?</h3>
+		<p>
+			We recommend that you use <a href="http://gbatemp.net/index.php?showtopic=163598">SuperDump</a> to dump your game to an SD card
+			or USB (flash) drive in as little as 20 to 30 minutes.
+		</p>
+	</body>
+</html>
